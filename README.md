@@ -1,5 +1,4 @@
-KIProgressView
-==============
+![KIProgressView](https://dl.dropboxusercontent.com/u/7817937/_github/KIProgressViewLogo_.png)
 
 Progress View like YouTube, Medium.
 
