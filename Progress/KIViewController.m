@@ -8,6 +8,8 @@
 
 #import "KIViewController.h"
 
+#import "KIProgressViewManager.h"
+
 @interface KIViewController ()
 
 @end
@@ -17,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[KIProgressViewManager manager] showProgressOnView:self.view];
 }
 
 - (void)didReceiveMemoryWarning

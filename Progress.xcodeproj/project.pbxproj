@@ -21,6 +21,8 @@
 		D4C24D5D19C5F9880015639A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24D3F19C5F9880015639A /* UIKit.framework */; };
 		D4C24D6519C5F9880015639A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C24D6319C5F9880015639A /* InfoPlist.strings */; };
 		D4C24D6719C5F9880015639A /* ProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D6619C5F9880015639A /* ProgressTests.m */; };
+		D4C24D7319C5FA920015639A /* KIProgressViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D7219C5FA920015639A /* KIProgressViewManager.m */; };
+		D4C24D7619C5FDB30015639A /* KIProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D7519C5FDB30015639A /* KIProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		D4C24D6219C5F9880015639A /* ProgressTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProgressTests-Info.plist"; sourceTree = "<group>"; };
 		D4C24D6419C5F9880015639A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4C24D6619C5F9880015639A /* ProgressTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressTests.m; sourceTree = "<group>"; };
+		D4C24D7119C5FA920015639A /* KIProgressViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIProgressViewManager.h; sourceTree = "<group>"; };
+		D4C24D7219C5FA920015639A /* KIProgressViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIProgressViewManager.m; sourceTree = "<group>"; };
+		D4C24D7419C5FDB30015639A /* KIProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIProgressView.h; sourceTree = "<group>"; };
+		D4C24D7519C5FDB30015639A /* KIProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		D4C24D4119C5F9880015639A /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				D4C24D7019C5FA7F0015639A /* Classes */,
 				D4C24D4A19C5F9880015639A /* KIAppDelegate.h */,
 				D4C24D4B19C5F9880015639A /* KIAppDelegate.m */,
 				D4C24D4D19C5F9880015639A /* Main.storyboard */,
@@ -150,6 +157,17 @@
 				D4C24D6319C5F9880015639A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4C24D7019C5FA7F0015639A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24D7119C5FA920015639A /* KIProgressViewManager.h */,
+				D4C24D7219C5FA920015639A /* KIProgressViewManager.m */,
+				D4C24D7419C5FDB30015639A /* KIProgressView.h */,
+				D4C24D7519C5FDB30015639A /* KIProgressView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C24D5219C5F9880015639A /* KIViewController.m in Sources */,
+				D4C24D7319C5FA920015639A /* KIProgressViewManager.m in Sources */,
 				D4C24D4C19C5F9880015639A /* KIAppDelegate.m in Sources */,
+				D4C24D7619C5FDB30015639A /* KIProgressView.m in Sources */,
 				D4C24D4819C5F9880015639A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
