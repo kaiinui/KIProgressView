@@ -12,20 +12,14 @@ Interface
 
 // KIProgressViewStyleRepeated
 // KIProgressViewStyleProgressBar
-```
 
-```
 [[KIProgressViewManager manager] setPosition:KIProgressViewPositionBotom];
 
 // KIProgressViewPositionBottom
 // KIProgressViewPositionTop
-```
 
-```objc
 [[KIProgressViewManager manager] setColor:[UIColor redColor]];
-```
 
-```objc
 [[KIProgressViewManager manager] setGradientStartColor:[UIColor blackColor]];
 [[KIProgressViewManager manager] setGradientEndColor:[UIColor whiteColor]];
 
@@ -40,13 +34,9 @@ Interface
 // UIGCherry
 // UIGElectricViolet
 // and so on..
-```
 
-```objc
 [[KIProgressViewManager manager] showProgressOnView:self.view];
-```
 
-```objc
 [[KIProgressViewManager manager] setProgress:0.80f]; // Only when the style is KIProgressViewStyleProgressBar. It will automatically animate the view.
 ```
 
