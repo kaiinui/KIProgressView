@@ -2,6 +2,8 @@
 
 Progress View like YouTube, Medium.
 
+![](http://i.gyazo.com/8b5dca1d197a89cb34409f250295a5ae.gif)
+
 Interface
 ---
 
@@ -9,7 +11,14 @@ Interface
 [[KIProgressViewManager manager] setStyle:KIProgressViewStyleRepeated];
 
 // KIProgressViewStyleRepeated
-// KIProgressViewStyleBar
+// KIProgressViewStyleProgressBar
+```
+
+```
+[[KIProgressViewManager manager] setPosition:KIProgressViewPositionBotom];
+
+// KIProgressViewPositionBottom
+// KIProgressViewPositionTop
 ```
 
 ```objc
@@ -17,11 +26,28 @@ Interface
 ```
 
 ```objc
-[[KIProgressViewManager manager] showProgress];
+[[KIProgressViewManager manager] setGradientStartColor:[UIColor blackColor]];
+[[KIProgressViewManager manager] setGradientEndColor:[UIColor whiteColor]];
+
+// Some presets from http://uigradients.com/
+// [UIColor uig_cherryStartColor];
+// [UIColor uig_cherryEndColor];
+
+// or as sharthand,
+
+[[KIProgressViewManager manager] setGradient:UIGCherry];
+
+// UIGCherry
+// UIGElectricViolet
+// and so on..
 ```
 
 ```objc
-[[KIProgressViewManager manager] setProgress:0.80f]; // Only when the style is KIProgressViewStyleBar. It will automatically animate the view.
+[[KIProgressViewManager manager] showProgressOnView:self.view];
+```
+
+```objc
+[[KIProgressViewManager manager] setProgress:0.80f]; // Only when the style is KIProgressViewStyleProgressBar. It will automatically animate the view.
 ```
 
 References
