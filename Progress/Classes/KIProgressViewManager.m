@@ -28,10 +28,18 @@
 - (void)showProgressOnView:(UIView *)view {
     CGFloat width = view.frame.size.width;
     
-    CGRect frame = CGRectMake(0, 0, width, 3.0f);
+    CGRect frame = CGRectMake(0, 0, width, 2.0f);
     
     KIProgressView *progressView = [[KIProgressView alloc] initWithFrame:frame];
-    progressView.backgroundColor = [UIColor blueColor];
+    UIColor *startColor = [UIColor colorWithRed:235.f/255.f green:51.f/255.f blue:73.f/255.f alpha:1.f];
+    UIColor *endColor = [UIColor colorWithRed:244.f/255.f green:92.f/255.f blue:67.f/255.f alpha:1.f];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = progressView.bounds;
+    gradient.startPoint = CGPointMake(0, 0);
+    gradient.endPoint = CGPointMake(width, 0);
+    gradient.colors = [NSArray arrayWithObjects:(id)[startColor CGColor], (id)[endColor CGColor], nil];
+    [progressView.layer insertSublayer:gradient atIndex:0];
     [view addSubview:progressView];
 }
 
