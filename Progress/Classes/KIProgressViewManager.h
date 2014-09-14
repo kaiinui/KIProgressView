@@ -12,5 +12,6 @@
 
 + (instancetype)manager;
 - (void)showProgressOnView:(UIView *)view;
+- (void)hideProgressView;
 
 @end
