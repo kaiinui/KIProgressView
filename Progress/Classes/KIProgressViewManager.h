@@ -13,6 +13,11 @@ typedef NS_ENUM(NSUInteger, KIProgressViewStyle) {
     KIProgressViewStyleProgressBar
 };
 
+typedef NS_ENUM(NSUInteger, KIProgressViewPosition) {
+    KIProgressViewPositionTop,
+    KIProgressViewPositionBottom
+};
+
 @interface KIProgressViewManager : NSObject
 
 + (instancetype)manager;
@@ -37,10 +42,11 @@ typedef NS_ENUM(NSUInteger, KIProgressViewStyle) {
 
 @property KIProgressViewStyle style;
 
+@property KIProgressViewPosition position;
+
 /**
  *  The color you want to set to progress.
  *  Please note if you set color, gradients will not be shown.
- *  I
  */
 @property UIColor *color;
 

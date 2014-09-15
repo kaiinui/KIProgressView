@@ -55,6 +55,7 @@
 
 - (void)initialize {
     self.style = KIProgressViewStyleRepeated;
+    self.position = KIProgressViewPositionTop;
     self.gradientStartColor = [UIColor colorWithRed:244.f/255.f green:92.f/255.f blue:67.f/255.f alpha:1.f];
     self.gradientEndColor = [UIColor colorWithRed:235.f/255.f green:51.f/255.f blue:73.f/255.f alpha:1.f];
     self.height = 2.0f;
@@ -64,7 +65,11 @@
 
 - (KIProgressView *)initializeProgressViewWithFrame:(CGRect)aFrame {
     CGFloat width = aFrame.size.width;
+    CGFloat height = aFrame.size.height;
     CGRect frame = CGRectMake(0, 0, width, self.height);
+    if (self.position == KIProgressViewPositionBottom) {
+        frame = CGRectMake(0, height - self.height, width, self.height);
+    }
     KIProgressView *progressView = [[KIProgressView alloc] initWithFrame:frame];
     
     if (self.color) {

@@ -23,6 +23,7 @@
 		D4C24D6719C5F9880015639A /* ProgressTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D6619C5F9880015639A /* ProgressTests.m */; };
 		D4C24D7319C5FA920015639A /* KIProgressViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D7219C5FA920015639A /* KIProgressViewManager.m */; };
 		D4C24D7619C5FDB30015639A /* KIProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24D7519C5FDB30015639A /* KIProgressView.m */; };
+		D4C24DCB19C680A50015639A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C24DCA19C680A50015639A /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D4C24D7219C5FA920015639A /* KIProgressViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIProgressViewManager.m; sourceTree = "<group>"; };
 		D4C24D7419C5FDB30015639A /* KIProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIProgressView.h; sourceTree = "<group>"; };
 		D4C24D7519C5FDB30015639A /* KIProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIProgressView.m; sourceTree = "<group>"; };
+		D4C24DCA19C680A50015639A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				D4C24D4A19C5F9880015639A /* KIAppDelegate.h */,
 				D4C24D4B19C5F9880015639A /* KIAppDelegate.m */,
 				D4C24D4D19C5F9880015639A /* Main.storyboard */,
+				D4C24DCA19C680A50015639A /* icon.png */,
 				D4C24D5019C5F9880015639A /* KIViewController.h */,
 				D4C24D5119C5F9880015639A /* KIViewController.m */,
 				D4C24D5319C5F9880015639A /* Images.xcassets */,
@@ -249,6 +252,7 @@
 			files = (
 				D4C24D5419C5F9880015639A /* Images.xcassets in Resources */,
 				D4C24D4619C5F9880015639A /* InfoPlist.strings in Resources */,
+				D4C24DCB19C680A50015639A /* icon.png in Resources */,
 				D4C24D4F19C5F9880015639A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +481,7 @@
 				D4C24D6C19C5F9880015639A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C24D6D19C5F9880015639A /* Build configuration list for PBXNativeTarget "ProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +490,7 @@
 				D4C24D6F19C5F9880015639A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

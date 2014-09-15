@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     
+    [[KIProgressViewManager manager] setPosition:KIProgressViewPositionBottom];
     [[KIProgressViewManager manager] showProgressOnView:self.view];
 }
 
