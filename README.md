@@ -18,7 +18,7 @@ To show a progress view,
 To hide the progress view,
 
 ```objc
-[[KIProgressViewManager manager] hideProgress];
+[[KIProgressViewManager manager] hideProgressView];
 ```
 
 ### Options
